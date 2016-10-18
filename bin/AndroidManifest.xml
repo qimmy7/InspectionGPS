@@ -1,0 +1,130 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inspection.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 读取设备信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ADD_SYSTEM_SERVICE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <application
+        android:name="com.inspection.app.common.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/mygpsapp"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.inspection.app.ui.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 登录 -->
+        <activity
+            android:name="com.inspection.app.ui.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="sensorPortrait" />
+        <!-- 主页 -->
+        <activity
+            android:name="com.inspection.app.ui.MainActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="sensorPortrait" />
+        <!-- 设置 -->
+        <activity
+            android:name="com.inspection.app.ui.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="sensorPortrait" />
+        <!-- 百度地图 -->
+        <activity
+            android:name="com.inspection.app.baidu.BaiduActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="sensorPortrait" />
+		<!-- 巡检待上传按日期 -->
+        <activity
+            android:name="com.inspection.app.ui.StayUploadActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="sensorPortrait" />
+        
+        <activity
+            android:name="com.inspection.app.vlook.FFmpegRecorderActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="sensorPortrait"
+            android:label="微录" >
+        </activity>
+        
+        <activity
+            android:name="com.inspection.app.vlook.FFmpegPreviewActivity"
+            android:screenOrientation="sensorPortrait"
+            android:label="预览" >
+        </activity>
+        
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        
+        <!-- 网络连接状态监听器  -->
+        <!-- <receiver
+            android:name="com.inspection.app.common.http.ConnectionChangeReceiver"
+            android:label="NetworkConnection" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver> -->
+        
+    </application>
+
+</manifest>

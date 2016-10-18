@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 圆角退出按钮效果 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中未up时 -->
+    <item android:state_pressed="true"><shape>
+
+            <!--
+	        	颜色渐变
+	        	startColor:开始颜色
+	        	endColor:结束颜色
+	        	angle:渐变方向 
+            -->
+            <gradient android:angle="270" android:endColor="@color/dialog_bg" android:startColor="@color/dialog_bg" />
+            
+            <!-- radius:半径 -->
+            <corners android:topLeftRadius="5dp" android:bottomLeftRadius="5dp" android:bottomRightRadius="5dp" android:topRightRadius="5dp" />
+
+            <!--
+	        	按钮边缘
+	        	width:边缘宽
+	        	color:边缘颜色
+            -->
+            <stroke android:width="1dp" android:color="@color/dialog_bg" />
+
+            <!-- 按钮文字和边缘距离(内边距) -->
+            <padding android:bottom="1dp" android:left="1dp" android:right="1dp" android:top="1dp" />
+        </shape></item>
+
+    <!-- 焦点 -->
+    <item android:state_focused="true"><shape>
+            <gradient android:angle="270" android:endColor="@color/dialog_bg" android:startColor="@color/dialog_bg" />
+            
+            <!-- radius:半径 -->
+            <corners android:topLeftRadius="5dp" android:bottomLeftRadius="5dp" android:bottomRightRadius="5dp" android:topRightRadius="5dp" />
+
+            <stroke android:width="1dp" android:color="@color/dialog_bg" />
+
+            <padding android:bottom="1dp" android:left="1dp" android:right="1dp" android:top="1dp" />
+        </shape></item>
+
+    <!-- 无焦点 -->
+    <item><shape>
+            <gradient android:angle="270" android:endColor="@color/dialog_bg" android:startColor="@color/dialog_bg" />
+            
+            <!-- radius:半径 -->
+            <corners android:topLeftRadius="5dp" android:bottomLeftRadius="5dp" android:bottomRightRadius="5dp" android:topRightRadius="5dp" />
+
+            <stroke android:width="1dp" android:color="@color/dialog_bg" />
+
+            <padding android:bottom="1dp" android:left="1dp" android:right="1dp" android:top="1dp" />
+        </shape></item>
+
+</selector>

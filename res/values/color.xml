@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="login_line">#C5AFB1</color>
+    <color name="login_text_hint">#C5AFB1</color>
+    <color name="line">#F4F4F5</color>
+    <color name="top_bar">#CDE0E4</color>
+    <color name="system_text">#2B2255</color>
+    
+    <color name="app_back">#67A584</color>
+    
+    <color name="full_color">#37D7A5</color>
+    
+    <color name="half_transparent">#aa000000</color>
+    <color name="full_transparent">#00000000</color>
+    <color name="green">#00ff00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#808080</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    
+    <color name="main_bg">#4C4D4D</color>
+    <color name="main_topbar_bg">#37D7A5</color>
+    
+    <color name="label_bg">#FFFFFF</color>
+	<color name="alert_btn_text">#3092F0</color>
+	<color name="alert_sure_btn_text">#67A584</color>
+
+	<color name="exit_alpha">#67A584</color>
+	<color name="link_line">#C5AFB1</color>
+	<color name="blue">#499BF7</color>
+	
+	<color name="main_font">#FFFFFF</color>
+	
+	<!-- dialog背景色 -->
+	<color name="dialog_bg">#F0F0F0</color>
+	<color name="dialog_pressStart_bg">#DCDCDC</color>
+	<color name="dialog_pressEnd_bg">#E6E6E8</color>
+
+</resources>

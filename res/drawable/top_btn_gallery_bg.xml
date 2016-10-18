@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 圆角退出按钮效果 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中未up时 -->
+    <item android:state_pressed="true"><shape>
+
+            <!--
+	        	颜色渐变
+	        	startColor:开始颜色
+	        	endColor:结束颜色
+	        	angle:渐变方向 
+            -->
+            <gradient android:angle="270" android:endColor="#808080" android:startColor="#B7CED6" />
+            
+            <!--
+	        	按钮边缘
+	        	width:边缘宽
+	        	color:边缘颜色
+            -->
+            <stroke android:width="0dp" android:color="#B7CED6" />
+
+        </shape></item>
+
+    <!-- 焦点 -->
+    <item android:state_focused="true"><shape>
+            <gradient android:angle="270" android:endColor="#808080" android:startColor="#808080" />
+            
+            <stroke android:width="0dp" android:color="#808080" />
+
+        </shape></item>
+
+    <!-- 无焦点 -->
+    <item><shape>
+            <gradient android:angle="270" android:endColor="#808080" android:startColor="#808080" />
+            
+            <stroke android:width="0dp" android:color="#808080" />
+
+        </shape></item>
+
+</selector>

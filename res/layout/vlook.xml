@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222" >
+
+    <Button
+            android:id="@+id/play"
+            android:layout_width="66dp"
+            android:layout_height="36dp"
+            android:background="@drawable/vlook_btn_recorder_cancel"
+            android:text="微录"
+            android:onClick="vlook"
+            android:textColor="#bbbbbb"
+            android:textSize="14dp" />
+
+</RelativeLayout>

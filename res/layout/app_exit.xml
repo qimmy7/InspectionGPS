@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <Button
+        android:id="@+id/app_about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_top_pop_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/app_about"
+        android:textColor="@color/exit_alpha"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:background="#DAD9DB" />
+
+    <Button
+        android:id="@+id/app_change_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_middle_pop_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/app_change_user"
+        android:textColor="@color/exit_alpha"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:background="#DAD9DB" />
+
+    <Button
+        android:id="@+id/app_exit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_below_pop_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/app_exit_user"
+        android:textColor="@color/red"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/app_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/bottom_cancel_pop_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/app_cancle"
+        android:textColor="@color/blue"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:hint="@string/username_hint"
+    android:textColor="@color/system_text"
+    android:textColorHint="@color/login_text_hint"
+    android:textSize="@dimen/font_18"
+    android:textStyle="normal" />

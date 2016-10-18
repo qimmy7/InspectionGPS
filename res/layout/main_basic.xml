@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/basic_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/basic_task_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/main_info_bg"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="4dp" >
+
+                <TextView
+                    android:id="@+id/tv1_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="巡检作业：0 个"
+                    android:textColor="@color/main_font"
+                    android:textSize="@dimen/font_15" />
+            </LinearLayout>
+
+            <View style="@style/vertical_distance_border" />
+
+            <LinearLayout
+                android:id="@+id/basic_task_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/main_info_bg"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="4dp" >
+
+                <TextView
+                    android:id="@+id/tv2_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="已巡检：0 个"
+                    android:textColor="@color/main_font"
+                    android:textSize="@dimen/font_15" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/basic_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/basic_task_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/main_info_bg"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="4dp" >
+
+                <TextView
+                    android:id="@+id/tv4_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="工作状态：离线"
+                    android:textColor="@color/main_font"
+                    android:textSize="@dimen/font_15" />
+            </LinearLayout>
+
+            <View style="@style/vertical_distance_border" />
+
+            <LinearLayout
+                android:id="@+id/basic_task_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/main_info_bg"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="4dp" >
+
+                <TextView
+                    android:id="@+id/tv3_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="待上传：0 条"
+                    android:textColor="@color/main_font"
+                    android:textSize="@dimen/font_15" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/basic_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/main_info_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_longitude_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="0"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_15" />
+
+            <TextView
+                android:id="@+id/tv_latitude_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="0"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/basic_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/main_info_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/tv_height_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="海拔"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_15" />
+
+            <TextView
+                android:id="@+id/tv_height_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="0.0 米"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/basic_5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/main_info_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/tv_speed_km_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="速度"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_15" />
+
+            <TextView
+                android:id="@+id/tv_speed_km_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="0.0 米/秒"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/basic_6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/main_info_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/tv_location_distance_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="距最近作业点"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_15" />
+
+            <TextView
+                android:id="@+id/tv_location_distance_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="0.0 米"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_15" />
+            
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_taskId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/basic_7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/main_info_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_saltnum_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="卫星数：0 颗"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/basic_8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/main_info_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/tv_time_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="卫星时间"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_15" />
+
+            <TextView
+                android:id="@+id/tv_time_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="-"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_15" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/basic_9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/main_info_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/tv_hint_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_15" />
+
+            <TextView
+                android:id="@+id/tv_hint_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_15" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

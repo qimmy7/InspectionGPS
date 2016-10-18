@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 底部弹出框动画 -->
+    <style name="app_pop">
+        <item name="android:windowEnterAnimation">@anim/pop_up</item>
+        <item name="android:windowExitAnimation">@anim/pop_down</item>
+    </style>
+    
+    <!-- 竖直线 -->
+    <style name="vertical_border">
+        <item name="android:background">@color/line</item>
+        <item name="android:layout_width">0.1dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="vertical_white_border">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_width">0.1sp</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="vertical_distance_border">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <!-- 水平直线 -->
+    <style name="horizontal_white_border">
+        <item name="android:background">@color/system_text</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+    </style>
+    
+    <!-- 登录水平直线 -->
+    <style name="horizontal_border">
+        <item name="android:background">@color/main_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.1dip</item>
+    </style>
+    
+    <!-- 底部弹出window样式 -->
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+    </style>
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+
+    
+    <style name="customDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/custom_dialog_bg</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation.CustomTranslucent</item>
+    </style>
+    <style name="Animation.CustomTranslucent" parent="@android:style/Theme">
+        <item name="android:windowEnterAnimation">@anim/dialog_bottom_to_top</item>
+        <item name="android:windowExitAnimation">@anim/dialog_top_to_bottom</item>
+    </style>
+    
+    <!-- 数据加载进度条 -->
+    <style name="ProgressBarStyleLarge1" >
+	　　<item name="android:indeterminateDrawable">@drawable/progress_loading1</item>
+	　　<item name="android:minWidth">60dip</item>
+	　　<item name="android:maxWidth">60dip</item>
+	　　<item name="android:minHeight">60dip</item>
+	　　<item name="android:maxHeight">60dip</item>
+	</style>
+	<!-- 加载进度条 -->
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@color/full_transparent</item>
+        <item name="android:background">@color/full_transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    
+    
+    <!-- 所有listview样式 -->
+    <style name="listview_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0sp</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:footerDividersEnabled">true</item>
+    </style>
+    
+    <style name="Dialog_loading" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 没有标题 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 背景是否半透明 -->
+    </style>
+
+    <style name="Dialog_loading_noDim" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 没有标题 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 背景是否半透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 背景是否模糊 -->
+    </style>
+    
+</resources>

@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:id="@+id/settings_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_bg"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/top_btn_gallery_bg"
+                android:gravity="left|center"
+                android:onClick="goback"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_back"
+                    android:gravity="center"
+                    android:onClick="goback" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="@string/tv_back"
+                    android:textColor="@color/main_font"
+                    android:textSize="@dimen/font_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/top_btn_gallery_bg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/tv_settings"
+                    android:textColor="@color/main_font"
+                    android:textSize="@dimen/font_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/top_btn_gallery_bg"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="20dp" >
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/settings_topbar"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/settings_info_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_gps_uploadtime_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/tv_up_time"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+
+            <TextView
+                android:id="@+id/tv_gps_uploadtime_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="-"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+        </LinearLayout>
+
+        <View 
+            android:id="@+id/settings_line_1"
+            style="@style/horizontal_border" />
+
+        <LinearLayout
+            android:id="@+id/settings_info_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_uptime_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/tv_uptime"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+
+            <TextView
+                android:id="@+id/tv_uptime_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="-"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+        </LinearLayout>
+
+        <View 
+            android:id="@+id/settings_line_2"
+            style="@style/horizontal_border" />
+
+        <LinearLayout
+            android:id="@+id/settings_info_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_overspeed_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/tv_overspeed"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+
+            <TextView
+                android:id="@+id/tv_overspeed_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="-"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+        </LinearLayout>
+
+        <View 
+            android:id="@+id/settings_line_3"
+            style="@style/horizontal_border" />
+
+        <LinearLayout
+            android:id="@+id/settings_info_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_startrange_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/tv_startrange"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+
+            <TextView
+                android:id="@+id/tv_startrange_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="-"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+        </LinearLayout>
+
+        <View 
+            android:id="@+id/settings_line_4"
+            style="@style/horizontal_border" />
+
+        <LinearLayout
+            android:id="@+id/settings_info_5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_endrange_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/tv_endrange"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+
+            <TextView
+                android:id="@+id/tv_endrange_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="-"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+        </LinearLayout>
+
+        <View 
+            android:id="@+id/settings_line_5"
+            style="@style/horizontal_border" />
+
+        <LinearLayout
+            android:id="@+id/settings_info_6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_updistance_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/tv_updistance"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+
+            <TextView
+                android:id="@+id/tv_updistance_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="-"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+        </LinearLayout>
+
+        <View 
+            android:id="@+id/settings_line_6"
+            style="@style/horizontal_border" />
+
+        <LinearLayout
+            android:id="@+id/settings_info_7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_pipedeviation_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/tv_pipedeviation"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+
+            <TextView
+                android:id="@+id/tv_pipedeviation_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="-"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+        </LinearLayout>
+
+        <View 
+            android:id="@+id/settings_line_7"
+            style="@style/horizontal_border" />
+
+        <LinearLayout
+            android:id="@+id/settings_info_8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_outoflinetime_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/tv_outoflinetime"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+
+            <TextView
+                android:id="@+id/tv_outoflinetime_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="-"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+        </LinearLayout>
+        
+        <!-- 清除缓存 -->
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/settings_info_9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:clickable="true"
+            android:onClick="cleanCache"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_clearthecache_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/tv_clearthecache"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+
+            <TextView
+                android:id="@+id/tv_clearthecache_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="-"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+        </LinearLayout>
+        
+        <View 
+            android:id="@+id/settings_line_8"
+            style="@style/horizontal_border" />
+        
+        <LinearLayout
+            android:id="@+id/settings_info_10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:clickable="true"
+            android:onClick="update"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_update_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/tv_update"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+
+            <TextView
+                android:id="@+id/tv_update_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="-"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+        </LinearLayout>
+        
+        <View 
+            android:id="@+id/settings_line_9"
+            style="@style/horizontal_border" />
+        
+        <LinearLayout
+            android:id="@+id/settings_info_11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:clickable="true"
+            android:onClick="logout"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_logout_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/tv_logout"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/font_13" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

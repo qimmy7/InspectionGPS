@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <Button
+        android:id="@+id/photo_locale_takephotos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_gallery_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/photo_locale_takephotos"
+        android:textColor="@color/alert_sure_btn_text"
+        android:textSize="@dimen/font_16" />
+
+    <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.8dip"
+        android:background="#DAD9DB" />
+
+    <Button
+        android:id="@+id/photo_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_camera_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/photo_gallery"
+        android:textColor="@color/alert_btn_text"
+        android:textSize="@dimen/font_16" /> -->
+
+    <Button
+        android:id="@+id/photo_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/photo_cancel_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/photo_cancel"
+        android:textColor="@color/alert_btn_text"
+        android:textSize="@dimen/font_16" />
+
+</LinearLayout>

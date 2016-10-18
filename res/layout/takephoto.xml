@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:id="@+id/takephoto_base_linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/base_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/patrol_bug_list"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/full_transparent"
+                android:spinnerMode="dropdown" />
+
+            <View
+                android:id="@+id/patrol_bug_line"
+                style="@style/horizontal_border" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/upload_photo_linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/lbs_popup_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/upload_photo_imgv"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/photo_upload_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/upload_photo_upload_btn"
+                android:text="@string/photo_upload"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_15" />
+            
+            <View style="@style/vertical_white_border"/>
+            
+            <Button
+                android:id="@+id/photo_save_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/upload_photo_save_btn"
+                android:text="@string/photo_save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_15" />
+            
+            <View style="@style/vertical_white_border"/>
+
+            <Button
+                android:id="@+id/photo_cancel_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/upload_photo_cancel_btn"
+                android:text="@string/photo_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_15" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
