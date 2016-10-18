@@ -5,4 +5,4 @@
 #### 2、拍照上传。
 #### 3、模仿微视，支持按下录制、抬起暂停，进度条断点显示。
 #### 4、拍完视频播放预览。
-![test](https://github.com/qimmy7/InspectionGPS/blob/master/2015-01-20-15-20-49-561.png)
+![test](./0.png)
